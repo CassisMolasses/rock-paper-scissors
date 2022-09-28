@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+html, body {
+    height: 100%;
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+body {
+    background-image: url(./Images/Roshambo1.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100%;
+    font-family: Rubik Dirt;
+}
+
+p {
+    font-family: Rubik Dirt;
+    text-align: center;
+    font-size: 45px;
+    color: rgba(0, 0, 0, 0.947);
+    font-weight: 300;
+    margin-top: 10px;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+  
+
+
+.fadeInText {
+    opacity: 0;
+    animation: fadeIn 5s linear;
+}
+
+#two {
+    animation-delay: 5s;
+}
+
+#three {
+    animation-delay: 10s;
+}
+
+#four {
+    animation-delay: 15s;
+}
+
+#five {
+    animation-delay: 20s;
+}
+
+.stayText {
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+
+ }
+
+#six {
+    opacity: 0;
+    animation-delay: 25s;
+}
+
+div.pickPath{
+    display: flex;
+    justify-content: center;
+    padding-top: 260px;
+}
+
+#seven {
+    background-color: black;
+    color: rgb(159, 163, 169);
+    font-weight: lighter;
+    font-size: 20px;
+    animation-delay: 30s;
+    display: flex;
+    justify-content: center;
+   
+    opacity:0;
+    
+
+}
+
+.gameContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: black;
+    color: rgb(159, 163, 169);
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px
+    font-family: Rubik Dirt;
+    margin: 10px;
+}
+
+.gameButtons {
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: row;
+    margin-top: 150px;
+    justify-content: center;
+    padding
+}
