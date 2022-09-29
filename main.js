@@ -11,4 +11,33 @@ if (output === 1) {
 }
 }
 
+function getPlayerChoice() {
+let input = prompt("PICK");
+input = input.toUpperCase();
+return(input);
+}
+
+function playRound() {
+  const playerChoice = getPlayerChoice();
+  const comChoice = getComChoice();
+  if (playerChoice === "ROCK" && comChoice === "PAPER") {
+    return("You lose, PAPER beats ROCK!");
+  } else if (playerChoice === "ROCK" && comChoice === "SCISSORS") {
+    return("You win, ROCK beats SCISSORS!");
+  } else if (playerChoice === "PAPER" && comChoice === "ROCK") {
+    return("You win, PAPER beats ROCK!");
+  } else if (playerChoice === "PAPER" && comChoice === "SCISSORS") {
+    return("You lose, SCISSORS beats PAPER!");
+  } else if (playerChoice === "SCISSORS" && comChoice === "ROCK") {
+    return("You lose, ROCK beats SCISSORS");
+  }else if (playerChoice === "SCISSORS" && comChoice === "PAPER") {
+    return("You win, SCISSORS beats PAPER!");
+  } else {
+    return("It\'s a tie!")
+  }
+  }  
+
+  let PlayerScore = 0;
+  let ComScore = 0;
+
   
